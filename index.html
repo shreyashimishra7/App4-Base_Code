@@ -99,3 +99,56 @@ Very basic scoring
 
 		<a href="#page2" class="w3-button w3-blue">Start</a>
 	</div>
+
+
+	<!-- QUESTION 1 -->
+	<div id="page2" class="page">
+		<h2>Do you feel tired?</h2>
+
+		<a href="#page3" onclick="addPoints(2)" class="w3-button w3-red">Yes</a>
+		<a href="#page3" onclick="addPoints(0)" class="w3-button w3-green">No</a>
+	</div>
+
+	<!-- QUESTION 2 -->
+	<div id="page3" class="page">
+		<h2>Do you sleep well?</h2>
+
+		<a href="#page4" onclick="addPoints(2)" class="w3-button w3-red">No</a>
+		<a href="#page4" onclick="addPoints(0)" class="w3-button w3-green">Yes</a>
+	</div>
+
+	<!-- QUESTION 3 -->
+	<div id="page4" class="page">
+		<h2>Do you feel overwhelmed?</h2>
+
+		<a href="#page5" onclick="addPoints(2)" class="w3-button w3-red">Yes</a>
+		<a href="#page5" onclick="addPoints(0)" class="w3-button w3-green">No</a>
+	</div>
+
+	<!-- QUESTION 4 -->
+	<div id="page5" class="page">
+		<h2>Do you take breaks?</h2>
+
+		<a href="#page6" onclick="addPoints(0)" class="w3-button w3-green">Yes</a>
+		<a href="#page6" onclick="addPoints(2)" class="w3-button w3-red">No</a>
+	</div>
+
+	<!-- RESULT PAGE -->
+	<div id="page6" class="page">
+		<h2>Your Result:</h2>
+
+		<!-- result text -->
+		<p id="result"></p>
+
+		<!-- button to calculate -->
+		<button onclick="showResult()" class="w3-button w3-blue">
+			See Result
+		</button>
+
+		<br><br>
+
+		<a href="#page1" class="w3-button w3-gray">Restart</a>
+	</div>
+
+</body>
+</html>

@@ -53,3 +53,49 @@ Very basic scoring
 		max-height: 90%;
 	}
 	</style>
+</head> 
+
+<script>
+
+	// stores score
+	var score = 0;
+
+	// add points
+	function addPoints(points){
+		score = score + points;
+	}
+
+	// show result
+	function showResult(){
+		var resultText = "";
+
+		// simple result logic
+		if(score <= 2){
+			resultText = "Low stress";
+		}
+		else if(score <= 5){
+			resultText = "Moderate stress";
+		}
+		else{
+			resultText = "High stress";
+		}
+
+		// display result
+		document.getElementById("result").innerHTML = resultText;
+	}
+
+</script>	
+
+<body>
+
+	<!-- PAGE 1 -->
+	<div id="page1" class="page">
+		<h1>Stress Checker</h1>
+
+		<!-- image -->
+		<img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Emoji_u1f9d0.svg">
+
+		<p>Answer a few simple questions</p>
+
+		<a href="#page2" class="w3-button w3-blue">Start</a>
+	</div>

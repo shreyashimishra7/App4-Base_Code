@@ -20,3 +20,36 @@ Very basic scoring
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="apple-mobile-web-app-capable" content="yes">
+
+	<link rel="stylesheet" href="w3.css">
+	<link rel="stylesheet" href="w3-colors-flat.css">
+
+	<style>
+	/* makes pages full screen */
+	.body {
+		margin: 0em;
+	}
+
+	.page {
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: -100vw;
+		overflow-y: auto;
+		z-index: 0;
+		background-color: white;
+	}
+
+	/* show active page */
+	.page:target {
+		left: 0vw;
+		z-index: 1;
+	}
+
+	/* image resize */
+	img {
+		max-width: 90%;
+		max-height: 90%;
+	}
+	</style>
